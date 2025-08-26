@@ -4,15 +4,17 @@ body{
     box-sizing: border-box;
    
 }
-.nav{
-    height: 200px;
-   
 
+.nav{
+    width: 100%;
+    background-color: #b1926a;
+    height: 95px;
 }
 .bag{
     background-color: #b1926a;
     width: 100%;
     height: 95px;
+    
    
 }
 .bag a{
@@ -53,10 +55,11 @@ span.icoe{
     width: 70%;
     height: 70px;
     border-radius: 35px;
+    margin-top: 20px;
     position: relative;
     left: 205px;
-    bottom: 50px;
-    z-index: 1;
+    bottom: 60px;
+    z-index: 1; 
 }
 .navbar ul{
     list-style-type: none;
@@ -88,6 +91,7 @@ span.icoe{
     font-size: 46px;
     margin-right: 10px;
 }
+/* END NAVBAR */
 .container{
     width: 100%;    
 }
@@ -99,19 +103,17 @@ span.icoe{
     background-size: cover;
     width: 100%;
     height: 650px;
-    position: relative;
-    bottom: 120px;
     
 }
-img{
-    width: 45%;
-    border-radius: 35px 0px 0px 0px;
-    position: relative;
-    float: left;
-    gap: none;
+.comp img{
     height: 650px;
-    margin-left: 100px;
+    width: 40%;
+    padding-left: 180px;
+    position: relative;
+    top: 54px;
+    border-radius: 0px 0px 35px 0px;
 }
+/* feedbackform */
 .feedback_Form{
     width: 40%;
     height: 650px;
@@ -119,7 +121,7 @@ img{
     border-radius: 0px 0px 35px 0px;
     float: right;
     position: relative;
-    bottom: 650px;
+    bottom: 600px;
     padding-right: 20px;
     margin-right: 120px;
 }
@@ -203,7 +205,7 @@ textarea{
     position: relative;
     top: 10px;
     left: 550px;
-    color: white;
+    color:white;
     font-size: 30px;
 }
 .cup{
@@ -226,6 +228,7 @@ textarea{
 
 .quotes h2{
     font-size: 28px;
+    color: rgb(82, 38, 7);
     text-transform: capitalize;
     position: relative;
     bottom: 190px;
@@ -234,6 +237,7 @@ textarea{
 }
 .quotes h1{
     font-size:100px;
+    color: rgb(82, 38, 7);
     position: relative;
     bottom: 130px;
     
@@ -242,6 +246,7 @@ textarea{
     text-transform: uppercase;
     font-size: 18px;
     top:  0px;
+    color: rgb(82, 38, 7);
 
 }
 .rectImg{
@@ -270,6 +275,7 @@ textarea{
 .text p{
     font-size: 23px;
     padding-top: 10px;
+    color: rgb(82, 38, 7);
 }
     
 
@@ -303,23 +309,25 @@ textarea{
     background-image: url(./images/phne5.png);
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-   bottom: 120px;
+   
+    
 }
 .header{
     height: 650px;
     width: 100%;
-    margin-right: 20px;
-    position: relative;
-    font-size: 24px;
-    text-align: center;
-    text-transform: capitalize;
-    padding-top:1px;
     color: rgb(82, 38, 7);
+    text-transform: capitalize;
+    background-color: rgb(182, 178, 174);
 
 }
 .samsung{
-    width: 30%;
+    width: 100%;
+    height: 650px;
+    display: flex;
+    
+}
+.samsung .textSumsung{
+    width: 35%;
     height: 650px;
     
 }
@@ -328,16 +336,12 @@ textarea{
     text-align: left;
     color: rgb(82, 38, 7);
     padding-left: 30px;
-    position: relative;
-    top: 20px;
    
 }
 .samsung p{
     font-size: 20px;
     color: rgb(82, 38, 7);
     text-transform: none;
-    position: relative;
-    top: 20px;
 
 }
 .samsung button{
@@ -349,19 +353,20 @@ textarea{
     height: 40px;
     text-transform: capitalize;
     font-size: 20px;
-    position: relative;
-   top :100px;
+
 }
 .samsung button:hover{
     opacity: 0.4;
 }
 .crlimg{
-     width: 80px;
-    margin: 30px 100px;
+     width: 30%;
+    height: 650px;
+    
 }
-.imge{
-    margin: 30px 100px;
-    width:40% ;
+.parag{
+    width: 35%;
+    height: 650px;
+
 }
 .pictu{
     background-image: url(./images/phne7.png);
@@ -369,9 +374,6 @@ textarea{
     background-size: cover;
     width: 400px;
     height: 400px;
-    position: relative;
-    left: 380px;
-    bottom: 350px;
     padding-bottom: 60px;
 }
 .parag h1{
@@ -379,18 +381,12 @@ textarea{
     text-align: left;
     color: rgb(82, 38, 7);
     padding-left: 30px;
-    position: absolute;
-    left: 900px;
-    bottom: 420px;
     text-transform: capitalize;
 }
 .parag p{
      font-size: 24px;
     color: rgb(82, 38, 7);
     text-transform: none;
-    position: absolute;
-    top: 200px;
-    left: 900px;
      padding-left: 30px;
 
 }
@@ -399,108 +395,143 @@ textarea{
     color: aliceblue;
     border: none;
     border-radius: 25px;
-    width: 15%;
+    width: 35%;
     height: 40px;
     text-transform: capitalize;
     font-size: 20px;
-    position: absolute;
-    left: 900px;
-    top: 500px;
 }
 .parag button:hover{
     background-color: goldenrod;
 }
-main{
-    font-size: 20px;
-    color: rgb(82, 38, 7) ;
-    text-transform: capitalize;
+/* TEAM */
+.people{
     width: 100%;
-    height: 450px;
-    padding-top: 30px;
+    height: 550px;
+    color: rgb(82, 38, 7);
 }
-main img{
-     height: 130px;
-    width: 130px;
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    border: 3px solid  goldenrod;
-    position: relative;
-    left:20px   ;
-    top: 10px;
+.people h1{
+    width: 80%;
+    height: 100px;
+    text-transform: capitalize;
+    text-align: center;
+  
 }
-main p{
-    position: relative;
-    top: 180px;
-    right: 100px;
-}
-main span{
-    position: relative;
-    top: 200px;
-    right: 100px;
-}
-
-
 .imgth{
-    height: 130px;
-    width: 130px;
+    height: 300px;
+   
+}
+.teamImg{
     border-radius: 50%;
-    border: 0px solid  goldenrod;
-    position: relative; 
-    margin-left: 450px;
-    bottom: 70px;
+    height: 150px;
+    width: 150px;
+    border: 6px solid goldenrod;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
 }
-.imgth span{
-     position: relative;
-    top: 30px;
-    left: 150px;
+.teamImg{
+    background-image: url(./images/pple1.png);
+    
 }
-.imgth p{
-    position: relative;
-    top: 20px;
-    left: 150px;
+.teamImg2{
+    background-image: url(./images/pple2.png);
 }
-.imght {
-     height: 130px;
-    width: 130px;
-    border-radius: 50%;
-    border: 0px solid  goldenrod;
-    position: relative; 
-    margin-left: 990px;
-    bottom: 200px;
+.teamImg3{
+    background-image: url(./images/pple4.png);
+}
+.imgth h3{
+    text-transform: capitalize;
+    font-size: 24px;
+   
+   
+}
+.imgth .imgth_txt{
+    text-align: center;
+   
+}
+.imgth .imgth_txt p{
+    text-transform: capitalize;
+    font-size: 20px;
+   
+}
+.peopleImg{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+   
 }
 
-.imght p{
-    position: relative;
-    top: 30px;
-    left: 160px;
-}
-.imght span{
- position: relative;
-    top: 30px;
-    left: 170px;
-}
+
 
 
 /* hizi ni za service */
 .servi{
     background-color: #cfc1ad;
     height: 150px;
-    width: 100%;
-    position: relative;
     font-size: 20px;
     text-align: center;
     font-style: italic;
     text-transform: capitalize;
     padding-top: 70px;
-    bottom: 120px;
     color: rgb(82, 38, 7);
 }
+.wrapper{
+    width: 100%;
+}
+.wrapper.carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+}
+.carousel .card{
+    line-height: 250px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.carousel .card1{
+    background:rgb(179, 167, 140);
+}
+.carousel .card2{
+    background: goldenrod;
+}
+.carousel .card3{
+    background-color:rgb(82, 38, 7);
+}
+.carousel .card4{
+    background-color: rgb(237, 168, 40);
+}
+.carousel .card5{
+    background-color: #630460;
 
+}
+.owl-dots{
+    text-align: center;
+    margin-top:40px ;
+}
+.owl-dot{
+    height: 15px;
+    width: 45px;
+    border-radius: 25px;
+    margin: 5px;
+    outline: none;
+    cursor: pointer;
+    border: 4px solid #0072bc !important;
+    transition: all 0.3s ease;
+}
+.owl-dot:hover,
+.owl-dot.active{
+    background: #0072bc !important;
+}
 
 /* hizi ni za gallery */
 .galler{
     width: 100%;
+   
     background-color: rgb(179, 167, 140);
     position: relative;
     bottom: 120px;
@@ -521,6 +552,7 @@ main span{
     top: 40px;
     width: 100%;
     height: 990px;
+    display: inline-block;
    
     
 }
@@ -532,37 +564,45 @@ main span{
 }
 .idea2 #imgidea{
     height: 350px;
-    max-width: 370px;
+    max-width: 400px;
     border-radius: 0px;
-    position: relative;
-    right: 50px;
+    position: absolute;
+    right: 650px;
+    top: 10px;
+    
 }
 .idea3 #imgidea{
     height: 350px;
-    max-width: 370px;
+    max-width: 400px;
     border-radius: 0px;
     position: relative;
-    top: 5px;
-    right: 30px;
+    bottom: 350px;
+    left: 980px;
    
 }
 .idea4 #imgidea{
     height: 350px;
     max-width: 450px;
     border-radius: 0px;
-    padding-top: 30px;
+    position: absolute;
+    top: 400px;
 }
 .idea5 #imgidea{
     height: 350px;
    max-width: 350px;
     border-radius: 0px;
-    padding-top: 30px;
+    position: absolute;
+    bottom: 250px;
+    left: 550px;
+
 }
 .idea6 #imgidea{
     height: 350px;
-    max-width: 370px;
+    max-width: 380px;
     border-radius: 0px;
-    padding-top: 30px;
+    position: relative;
+    bottom: 320px;
+    left: 980px;
 
 }
 span.text2{
@@ -578,6 +618,7 @@ span.text2{
     width: 80%;
     height: 800px;
     margin: 50px 100px 50px 150px;
+    background-color: #ead3b0;
     
 }
 .conta h1{
@@ -601,7 +642,7 @@ span.text2{
     padding: 0px 20px 0px 10px;
 }
 .fieldConta button{
-      background-color: #b1926a;
+    background-color: #b1926a;
     border-radius: 25px;
     border: none;
     color: white;
@@ -616,8 +657,8 @@ span.text2{
 }
 
 .map{
-  width: 50%;
-  height: 600px;
+    width: 50%;
+    height: 600px;
     float: right;
     position: relative;
     bottom: 15px;
@@ -693,4 +734,650 @@ footer{
     font-size: 26px;
     color: rgb(82, 38, 7);
 }
+/* REVIEW */
 
+
+.containerReview h1{
+   text-transform: uppercase;
+   font-size: 28px;
+   text-align: center;
+   color: rgb(82, 38, 7);
+   font-family: 'Times New Roman', Times, serif;
+}
+.rating-number{
+    font-size: 95px;
+    padding-left: 100px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 80px;
+}
+
+.stars{
+    color: rgb(237, 168, 40);
+    padding-left: 100px;
+    margin-top: 60px;
+}
+
+.containerReview1 {
+    max-width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    
+}
+.average-ratin{
+    width: 25%;
+    height: 200px;
+
+}
+.containerReview p{
+    text-transform: capitalize;
+    color: black;
+    font-size: 20px;
+    margin-top: 2px;
+}
+.containerReview2 {
+    width:40%;
+    height: 500px;
+    margin-top: 80px;
+
+}
+.box{
+    width: 100px;
+    height: 10px;
+    background-color: goldenrod;
+    margin-bottom: 30px;
+}
+
+.box1{
+    background-color: blue;
+    height: 20px;
+    width: 80%;
+    border-radius: 25px 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.box2{
+    background-color: blue;
+    height:20px ;
+    width: 60%;
+    border-radius: 25px 25px;
+    margin-bottom: 10px;
+}
+.box3{
+    background-color: blue;
+    height:20px ;
+    width: 40%;
+    border-radius: 25px 25px;
+    margin-bottom: 10px; 
+}
+.box4{
+    background-color: blue;
+    height:20px ;
+    width: 20%;
+    border-radius: 25px 25px;
+    margin-bottom: 10px; 
+} 
+.containerReview3{
+    width: 35%;
+    height: 200px;
+    display: flex;
+    margin-top: 80px;
+    position: relative;
+    margin-left: 30px;
+
+}
+.star{
+    color: rgb(237, 168, 40);
+    display: flex;
+    right: 20px;
+}
+span{
+    color: rgb(0, 149, 255);
+    font-size: 25px;
+}
+.pen{
+    color: rgb(237, 168, 40);
+    display: flex;
+    position: relative;
+    right: 150px;
+    top: 30px;
+
+}
+.pencils{
+     color: rgb(237, 168, 40);
+    display: flex;
+    position: relative;
+    right: 300px;
+    top: 60px;
+}
+.ruler{
+   color: rgb(237, 168, 40);
+    display: flex; 
+     position: relative;
+    right: 450px;
+    top: 90px;
+}
+.rubber{
+    color: rgb(237, 168, 40);
+    display: flex; 
+     position: relative;
+    right: 600px;
+    top: 120px;
+}
+/* REVIEW */
+.containerReview4{
+    width: 100%;
+    margin-top: 70px;
+}
+.review{
+    width: 90%;
+    height: 180px;
+    display: flex;
+    background-color: #ead3b0;
+    margin: 20px 0px 20px 50px;    
+    justify-content: center;
+    
+}
+.containerReview4 h2{
+    margin: 20px 0px 0px 40px;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    color: black;
+}
+.imageReview{
+    height: 180px;
+    width: 50%;
+    background-color: #b1926a;
+    justify-content: center;
+   
+}
+#review_img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin: 18px 0px 0px 35px;
+    
+}
+.media{
+    width: 30%;
+    display: flex;
+}
+.textReview{
+    width: 50%;
+    height: 180px;
+    display: block;
+    background-color: #ead3b0;
+}
+.textReview #hunt p{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px 0px 0px 25px;
+}
+
+.textReview .image-inf p{
+    font-size: 18px;
+    padding: 10px 0px 0px 30px;
+}
+
+.starPara{
+    padding: 40px 18px 5px 20px;
+    width: 70%;    
+}
+.star2{
+    display: flex;
+    color: goldenrod;
+    gap: 3px;
+    margin-bottom: 10px;
+}
+.para3 p{
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /* HOME */
+    body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+   
+}
+.nav{
+    width: 100%;
+    background-color: #b1926a;
+    height: 95px;
+}
+.bag{
+    background-color: #b1926a;
+    width: 100%;
+    height: 95px;
+    
+   
+}
+.bag a{
+    left: 100px;
+    font-size: 16px;
+}
+span.zip1{
+    position: relative;
+    top: 18px;
+    right: 80px;
+}
+span.zip2{
+    position: relative;
+    top: 20px;
+    left: 1px;
+}
+span.icoe{
+    position: relative;
+    left: 250px;
+    top: 20px;
+   
+}
+
+.navbar{
+    width: 75%;
+    position: relative;
+    left: 100px;
+  
+}
+.navbar ul{
+    position: relative;
+    left: 1px;
+    gap: 10px;
+}
+.navbar a{
+    font-size: 16px;
+
+}
+
+.navbar .fb1{
+    position: relative;
+    bottom: 5px;
+    font-size: 26px;
+
+}
+.navbar .fb2{
+    position: relative;
+    bottom: 5px;
+    font-size: 26px;
+
+}
+.container{
+    width: 100%;    
+}
+
+.comp img{
+   gap: none;
+    height: 450px;
+    padding-left: 100px;
+   
+    
+}
+.feedback_Form{
+    margin-top: 200px ;
+    height: 450px;
+     position: relative;
+    bottom: 600px;
+   
+   
+   
+}
+.heading h3{
+    margin-top: 1px;
+   
+}
+
+form{
+    padding-left: 20px;
+    height: 30px;
+    padding-top: 1px;
+    
+}
+.fields input{
+    padding-bottom: 10px;
+}
+input{
+    margin-bottom: 2px;
+    height: 28px;
+    
+}
+.icons{
+    top: 25px;
+    left: 5px;
+    
+}
+textarea{
+    width: 88%;
+    height: 50px;
+    margin-left: 3px;
+    
+}
+
+.rkn-feedback button{
+    height: 30px;
+     width: 60%; 
+   position: relative;
+  bottom: 25px;
+  padding-top: 10px;
+    
+} 
+
+.heading p{
+    padding-top: 35px;  
+} 
+.icon{
+    top: 25px;
+    left: 5px;
+   
+}
+  
+.icone{
+    top: 25px;
+    left: 5px;
+   
+}
+.chair{
+    top: 5px;
+    left: 250px;
+   
+}
+.cup{
+    background-color: #b1926a;
+    height: 370px;
+    width: 48%;
+    margin-left: 10px; 
+   
+    
+    
+}
+.quotes{
+    width: 200px;
+    padding-left: 15px;
+}
+
+.quotes h2{
+    font-size: 18px;
+   
+}
+.quotes h3{
+    font-size: 15px;
+
+}
+.rectImg{
+    width: 60px;
+    margin: 30px 5px;
+    height: 250px;
+    
+}
+.pic{
+    width: 100px;
+    height: 100px;
+    right:20px;
+ 
+}
+
+.text p{
+    font-size: 17px;
+    
+}
+    
+
+
+  /* ABOUT */
+  .image{
+    width: 100%;
+    height: 400px;
+    background-image: url(./images/phne5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .header {
+    height: 1100px;
+    width: 100%;
+   text-transform: capitalize;
+    background-color: rgb(175, 170, 166);
+ }
+
+.samsung{
+     height: 1000px;
+     background-color: gray;
+    width: 100%;
+    display: block;
+
+    
+}
+ .samsung .textSumsung{
+    width: 100%;
+    height: 250px;
+    text-align: justify;
+   
+    
+}
+.crlimg{
+     width: 100%;
+    height: 450px;
+     margin: 30px 0px;
+    }
+.parag{
+    width: 100%;
+    height: 250px;
+
+}
+
+.pictu{
+    background-image: url(./images/phne7.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+    
+}
+.people{
+    width: 100%;
+    color: rgb(82, 38, 7);
+}
+.txtPple{
+    justify-content: center;
+  
+}
+.peopleImg{
+    justify-content: space-around;
+   
+}
+
+.text_footer{
+    text-align: center;
+    margin-bottom: 12px;
+}
+ 
+.icon_footer{
+    text-align: center;
+    color: rgb(82, 38, 7);
+   
+}
+
+.footer1 {
+    text-align: center;
+}
+.footer1 .word1{
+    font-size: 34px;
+}
+.footer1 .word2{
+  font-size: 34px;
+} 
+#icon_fa {
+    font-size: 32px;
+}
+
+.textFooterLeft, .textFooterRight{
+    font-size: 22px;
+}
+/* REVIEW */
+.rating-number{
+    font-size: 56px;
+    padding-left: 60px;
+
+}
+
+.stars{
+    padding-left: 60px;
+    margin-top: 70px;
+}
+
+.containerReview p{
+     font-size: 16px;
+}
+.review{
+    width: 90%;
+    height: 350px;
+    display: block;
+    margin: 20px 0px 20px 50px;    
+    justify-content: center;
+    
+}
+
+
+/* REVIEW-conti.. */
+
+.media{
+    width: 100%;
+    display: flex;
+    height: 100px;
+   
+}
+.imageReview{
+    width: 20%;
+    height: 130px;
+    background-color: #b1926a;
+   
+}
+#review_img{
+    height: 90px;
+    width: 90px;
+    margin: 20px 0px 0px 25px;
+   
+}
+.textReview{
+    background-color: #b1926a;
+    width: 80%;
+    height: 130px;
+    display: block;
+}
+.textReview #hunt p{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 25px 0px 0px 10px;
+}
+
+.textReview .image-inf p{
+    font-size: 16px;
+    padding: 0px 0px 0px 13px;
+}
+.starPara{
+    height: 200px;
+    width: 100%;    
+    display: block;
+}
+.para3 p{
+    font-size: 15px;
+    padding: 10px;
+}
+.star2{
+    margin-top: 15px;
+}
+
+
+.para3 .tel{
+    font-size: 18px;
+     width: 80%;
+    position: absolute;
+    left: 60px;
+
+}
+
+
+/* GALLERY */
+.galler h1,h3{
+    font-size: 36px;
+   
+    
+}
+.ideas{
+    position: relative;
+    border-radius:none ;
+    top: 40px;
+    width: 100%;
+    height: 995px;
+    display: inline-block;
+   
+    
+}
+.idea1 #imgidea{
+    max-width: 250px;
+    position: relative;
+    left: 2px;
+    height: 300px;
+  
+}
+.idea2 #imgidea{
+    height: 300px;
+    max-width: 250px;
+    border-radius: 0px;
+    position: absolute;
+    left: 350px;
+    top: 10px;
+    
+}
+.idea3 #imgidea{
+    max-width: 250px;
+    height: 300px;
+    top: 20px;
+    left: 2px;
+   
+}
+.idea4 #imgidea{
+    max-width: 250px;
+    position: absolute;
+    top: 330px;
+    height: 300px;
+    right: 150px;
+}
+.idea5 #imgidea{
+   max-width: 250px;
+   height: 300px;
+    position: absolute;
+    top: 650px;
+    left: 10px;
+}
+.idea6 #imgidea{
+    max-width: 250px;
+    height: 300px;
+    position: relative;
+    top: 40px;
+    left: 350px;
+
+}
+
+/* CONTACT */
+
+.fieldConta{
+    width: 70%;
+    height: 60px;
+   
+}
+.fieldConta button{
+    width: 60%;
+    font-size: 15px;
+    text-transform:capitalize ;
+    padding: 5px;
+}
+
+.map{
+    bottom: 16px;
+}
+
+}
